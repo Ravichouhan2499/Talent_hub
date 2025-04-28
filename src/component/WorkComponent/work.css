@@ -1,0 +1,153 @@
+/* PoseControlShowcase.css */
+.pose-control-container {
+    background-color: #111;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .fullscreen-exit {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(30, 30, 35, 0.8);
+    padding: 10px 20px;
+    border-radius: 4px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .esc-key {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    margin-left: 5px;
+    font-family: monospace;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 0 20px;
+  }
+  
+  .text-content {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+  }
+  
+  .section-label {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .main-heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-family: serif;
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: 500px;
+    opacity: 0.9;
+  }
+  
+  .images-container {
+    flex: 0 0 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 50px 0;
+  }
+  
+  .image-box {
+    border-radius: 12px;
+    overflow: hidden;
+    height: 80vh;
+    max-height: 650px;
+  }
+  
+  .image-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .ballet {
+    margin-top: 50px;
+  }
+  
+  .urban {
+    margin-bottom: 50px;
+  }
+  
+  /* Media Queries for responsive design */
+  @media (max-width: 992px) {
+    .main-content {
+      flex-direction: column;
+      padding: 60px 20px;
+    }
+    
+    .text-content {
+      flex: 0 0 auto;
+      margin-bottom: 40px;
+      text-align: center;
+      align-items: center;
+      padding-right: 0;
+    }
+    
+    .images-container {
+      flex: 0 0 auto;
+      justify-content: center;
+    }
+    
+    .image-box {
+      height: auto;
+      max-height: 450px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .images-container {
+      flex-direction: column;
+    }
+    
+    .image-box {
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .ballet, .urban {
+      margin: 0;
+    }
+    
+    .main-heading {
+      font-size: 2.5rem;
+    }
+    
+    .description {
+      font-size: 1.2rem;
+    }
+  }
