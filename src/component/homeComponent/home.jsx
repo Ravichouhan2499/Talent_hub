@@ -18,7 +18,7 @@ export default function Home() {
           playsInline
           poster="/city-background-poster.jpg"
         >
-          <source src='src/assets/videos/videohubb.mp4' type="video/mp4" />
+          <source src='/videos/videohubb.mp4' type="video/mp4" />
           {/* Note: Video is included but won't play in this preview environment */}
           Your browser does not support the video tag.
         </video>
