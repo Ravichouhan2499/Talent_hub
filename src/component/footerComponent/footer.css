@@ -1,154 +1,293 @@
-/* TalentHubFooter.css */
-
 .footer-container {
-    background-color: #121212;
-    color: white;
-    padding: 2rem 5%;
-    width: 100%;
-    font-family: 'Arial', sans-serif;
-  }
-  
+  background-color: #0e0e2c;
+  color: white;
+  font-family: 'Inter', 'Arial', sans-serif;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 5% 3rem;
+  gap: 2rem;
+}
+
+/* Company Info Section */
+.footer-company-info {
+  flex: 1;
+  max-width: 380px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.footer-logo-img {
+  width: 60px;
+  height: auto;
+}
+
+.footer-logo h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  background: linear-gradient(90deg, #7928ca, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.company-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #c7c7d8;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #c7c7d8;
+}
+
+.contact-icon {
+  color: #7928ca;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Social Media Links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-icon {
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #7928ca;
+  transform: translateY(-3px);
+}
+
+/* Footer Navigation */
+.footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  flex: 2;
+}
+
+.footer-section {
+  min-width: 160px;
+}
+
+.footer-section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background: linear-gradient(90deg, #7928ca, #ff0080);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.footer-section ul li a {
+  color: #acacbe;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-section ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #7928ca;
+  transition: width 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: white;
+  transform: translateX(3px);
+}
+
+.footer-section ul li a:hover::after {
+  width: 100%;
+}
+
+/* App Buttons */
+.app-description {
+  color: #acacbe;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.app-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.download-button:hover {
+  background-color: #7928ca;
+  transform: translateY(-3px);
+}
+
+.store-icon {
+  font-size: 1.5rem;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-text span:first-child {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.button-text span:last-child {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #080820;
+  padding: 1.5rem 5%;
+  font-size: 0.9rem;
+}
+
+.footer-bottom-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-bottom-links a {
+  color: #acacbe;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: white;
+}
+
+@media (max-width: 992px) {
   .footer-content {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  
-  /* Left side - Logo and Social Media */
-  .footer-left {
-    display: flex;
     flex-direction: column;
-    gap: 1.5rem;
   }
-  
-  .footer-logo {
-    display: flex;
-    align-items: center;
+
+  .footer-company-info {
+    max-width: 100%;
+    margin-bottom: 2rem;
   }
-  
-  .footer-logo h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-left: 0.5rem;
-    color: white;
-  }
-  
-  .social-links {
-    display: flex;
-    gap: 1.2rem;
-  }
-  
-  .social-links a {
-    color: white;
-    font-size: 1.3rem;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-  }
-  
-  .social-links a:hover {
-    opacity: 1;
-  }
-  
-  /* Right side - Navigation */
+
   .footer-navigation {
-    display: flex;
-    gap: 4rem;
+    width: 100%;
+    justify-content: space-between;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .footer-navigation {
+    gap: 2rem 1rem;
+  }
+
   .footer-section {
-    display: flex;
+    min-width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-navigation {
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
   }
-  
-  .footer-section h3 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: white;
-    margin-bottom: 0.5rem;
+
+  .footer-section {
+    min-width: 100%;
   }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+
+  .footer-bottom-content {
     flex-direction: column;
-    gap: 0.8rem;
+    text-align: center;
   }
-  
-  .footer-section ul li a {
-    color: #a0a0a0;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-section ul li a:hover {
-    color: white;
-  }
-  
-  /* Download Button */
-  .download-button {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 0.8rem 1.2rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .download-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  
-  .apple-icon {
-    display: flex;
-    align-items: center;
+
+  .footer-bottom-links {
+    flex-wrap: wrap;
     justify-content: center;
   }
-  
-  .apple-icon svg {
-    fill: white;
-  }
-  
-  .button-text {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .button-text span:first-child {
-    font-size: 0.75rem;
-    opacity: 0.8;
-  }
-  
-  .button-text span:last-child {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 900px) {
-    .footer-content {
-      flex-direction: column;
-      gap: 3rem;
-    }
-  
-    .footer-navigation {
-      flex-wrap: wrap;
-      gap: 2.5rem;
-    }
-  
-    .footer-section {
-      min-width: 150px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .footer-navigation {
-      flex-direction: column;
-      gap: 2rem;
-    }
-  }
+}

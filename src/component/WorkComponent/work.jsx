@@ -1,7 +1,7 @@
 import React from 'react';
 import './work.css'; // Keep using your existing CSS or adjust if needed
-import img1 from '../../assets/images/playing.png'; // Placeholder image for the first team member
-import img2 from '../../assets/images/learning.png'; // Placeholder image for the second team member
+import img1 from '../../assets/images/young.png'; // Placeholder image for the first team member
+import img2 from '../../assets/images/youngage2.png'; // Placeholder image for the second team member
 
 const TalentLearningShowcase = () => {
   return (

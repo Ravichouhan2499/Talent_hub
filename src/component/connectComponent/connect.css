@@ -45,7 +45,7 @@
   }
   
   .discord-button {
-    background-color: #4CAF50;
+    background-color: #480c81;
     color: white;
     border: none;
     border-radius: 6px;
@@ -57,7 +57,7 @@
   }
   
   .discord-button:hover {
-    background-color: #45a049;
+    background-color: blueviolet;
   }
   
   /* Avatar Grid Styles */

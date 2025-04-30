@@ -24,6 +24,7 @@
     line-height: 1.1;
     margin: 0;
     max-width: 500px;
+    color: blueviolet;
   }
   
   .subtitle {
@@ -60,7 +61,7 @@
   }
   
   .card-tag {
-    color: #999999;
+    color: white;
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -73,10 +74,11 @@
     font-size: 1.5rem;
     margin: 0.5rem 0;
     font-weight: 600;
+    color: blueviolet;
   }
   
   .card-description {
-    color: #aaaaaa;
+    color: white;
     font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 1rem;

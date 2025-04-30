@@ -1,72 +1,135 @@
 // TalentHubFooter.jsx
 import React from 'react';
 import './footer.css';
-import { FaTwitter, FaInstagram, FaTiktok, FaYoutube, FaDiscord } from 'react-icons/fa';
+import { 
+  FaTwitter, 
+  FaInstagram, 
+  FaTiktok, 
+  FaYoutube, 
+  FaDiscord, 
+  FaLinkedin,
+  FaFacebookSquare,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaApple,
+  FaGooglePlay
+} from 'react-icons/fa';
+import logo from '../../assets/images/talaent-1.png';
 
 const TalentHubFooter = () => {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        {/* Logo and Social Media */}
-        <div className="footer-left">
+        {/* Company Info */}
+        <div className="footer-company-info">
           <div className="footer-logo">
-            <img src="/api/placeholder/150/50" alt="Talent Hub Logo" />
+            <img src={logo} alt="Talent Hub Logo" className="footer-logo-img" />
             <h2>Talent Hub</h2>
+          </div>
+          <p className="company-description">
+            Connecting exceptional talent with outstanding opportunities worldwide. 
+            Your success is our mission.
+          </p>
+          
+          <div className="contact-info">
+            <div className="contact-item">
+              <FaMapMarkerAlt className="contact-icon" />
+              <span>123 Innovation Drive, Tech City, CA 94107</span>
+            </div>
+            <div className="contact-item">
+              <FaPhoneAlt className="contact-icon" />
+              <span>+1 (555) 123-4567</span>
+            </div>
+            <div className="contact-item">
+              <FaEnvelope className="contact-icon" />
+              <span>contact@talenthub.com</span>
+            </div>
           </div>
           
           <div className="social-links">
-            <a href="https://twitter.com/talenthub" aria-label="Twitter">
+            <a href="https://twitter.com/talenthub" aria-label="Twitter" className="social-icon">
               <FaTwitter />
             </a>
-            <a href="https://instagram.com/talenthub" aria-label="Instagram">
+            <a href="https://instagram.com/talenthub" aria-label="Instagram" className="social-icon">
               <FaInstagram />
             </a>
-            <a href="https://tiktok.com/@talenthub" aria-label="TikTok">
+            <a href="https://tiktok.com/@talenthub" aria-label="TikTok" className="social-icon">
               <FaTiktok />
             </a>
-            <a href="https://youtube.com/talenthub" aria-label="YouTube">
+            <a href="https://youtube.com/talenthub" aria-label="YouTube" className="social-icon">
               <FaYoutube />
             </a>
-            <a href="https://discord.gg/talenthub" aria-label="Discord">
+            <a href="https://discord.gg/talenthub" aria-label="Discord" className="social-icon">
               <FaDiscord />
+            </a>
+            <a href="https://linkedin.com/company/talenthub" aria-label="LinkedIn" className="social-icon">
+              <FaLinkedin />
+            </a>
+            <a href="https://facebook.com/talenthub" aria-label="Facebook" className="social-icon">
+              <FaFacebookSquare />
             </a>
           </div>
         </div>
 
         {/* Navigation Links */}
         <div className="footer-navigation">
-          {/* Advanced Users Section */}
           <div className="footer-section">
-            <h3>For advanced users</h3>
-            <div className="download-button">
-              <div className="apple-icon">
-                <svg viewBox="0 0 24 24" width="24" height="24">
-                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.33-3.14-2.57-1.71-2.47-3.03-7.02-1.27-10.08.88-1.54 2.45-2.52 4.14-2.55 1.29-.01 2.52.87 3.32.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
-                </svg>
-              </div>
-              <div className="button-text">
-                <span>Get the app</span>
-                <span>MacOS</span>
-              </div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/careers">Careers</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/events">Events</a></li>
+              <li><a href="/testimonials">Success Stories</a></li>
+            </ul>
+          </div>
+
+          <div className="footer-section">
+            <h3>For Talents</h3>
+            <ul>
+              <li><a href="/job-seekers">Find Jobs</a></li>
+              <li><a href="/resources">Resources</a></li>
+              <li><a href="/learning">Learning Hub</a></li>
+              <li><a href="/talent-community">Join Community</a></li>
+              <li><a href="/portfolio">Create Portfolio</a></li>
+            </ul>
+          </div>
+
+          <div className="footer-section">
+            <h3>Get The App</h3>
+            <p className="app-description">Access opportunities on the go with our mobile app</p>
+            <div className="app-buttons">
+              <a href="/download/ios" className="download-button">
+                <FaApple className="store-icon" />
+                <div className="button-text">
+                  <span>Download on the</span>
+                  <span>App Store</span>
+                </div>
+              </a>
+              <a href="/download/android" className="download-button">
+                <FaGooglePlay className="store-icon" />
+                <div className="button-text">
+                  <span>Get it on</span>
+                  <span>Google Play</span>
+                </div>
+              </a>
             </div>
           </div>
-
-          {/* Product Section */}
-          <div className="footer-section">
-            <h3>Product</h3>
-            <ul>
-              <li><a href="/pricing">Pricing</a></li>
-              <li><a href="/api-docs">API Documentation</a></li>
-            </ul>
-          </div>
-
-          {/* Legal Section */}
-          <div className="footer-section">
-            <h3>Legal</h3>
-            <ul>
-              <li><a href="/privacy-policy">Privacy Policy</a></li>
-              <li><a href="/terms">Terms & Conditions</a></li>
-            </ul>
+        </div>
+      </div>
+      
+      <div className="footer-bottom">
+        <div className="footer-bottom-content">
+          <p className="copyright">© {currentYear} Talent Hub. All rights reserved.</p>
+          <div className="footer-bottom-links">
+            <a href="/sitemap">Sitemap</a>
+            <a href="/accessibility">Accessibility</a>
+            <a href="/security">Security</a>
+            <a href="/responsible-disclosure">Responsible Disclosure</a>
           </div>
         </div>
       </div>
