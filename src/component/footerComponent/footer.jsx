@@ -37,15 +37,16 @@ const TalentHubFooter = () => {
           <div className="contact-info">
             <div className="contact-item">
               <FaMapMarkerAlt className="contact-icon" />
-              <span>123 Innovation Drive, Tech City, CA 94107</span>
+              <span>Ratan Lok Colony
+              Vijay Nagar, Indore [M.P.]</span>
             </div>
             <div className="contact-item">
               <FaPhoneAlt className="contact-icon" />
-              <span>+1 (555) 123-4567</span>
+              <span>+91 92382740037</span>
             </div>
             <div className="contact-item">
               <FaEnvelope className="contact-icon" />
-              <span>contact@talenthub.com</span>
+              <span>info@makeoversolution.in</span>
             </div>
           </div>
           
@@ -81,9 +82,7 @@ const TalentHubFooter = () => {
             <ul>
               <li><a href="/about">About Us</a></li>
               <li><a href="/services">Services</a></li>
-              <li><a href="/careers">Careers</a></li>
               <li><a href="/blog">Blog</a></li>
-              <li><a href="/events">Events</a></li>
               <li><a href="/testimonials">Success Stories</a></li>
             </ul>
           </div>
@@ -91,8 +90,7 @@ const TalentHubFooter = () => {
           <div className="footer-section">
             <h3>For Talents</h3>
             <ul>
-              <li><a href="/job-seekers">Find Jobs</a></li>
-              <li><a href="/resources">Resources</a></li>
+              <li><a href="/job-seekers">Find Talents</a></li>
               <li><a href="/learning">Learning Hub</a></li>
               <li><a href="/talent-community">Join Community</a></li>
               <li><a href="/portfolio">Create Portfolio</a></li>
