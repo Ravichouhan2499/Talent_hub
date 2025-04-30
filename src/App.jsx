@@ -14,12 +14,12 @@ export default function App() {
   return (<>
       <Home/>
       <ExpertGrid/>
-      <About/>
+      {/* <About/> */}
       <ContentCreationPlatform/>
       <CharacterLabsShowcase/>
       <TalentLearningShowcase/>
       <CommunityConnect/>
-      <FAQAccordion/>
+      {/* <FAQAccordion/> */}
       <TalentHubFooter/>
     </>
   )
